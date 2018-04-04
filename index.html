@@ -1,0 +1,47 @@
+<!doctype html>
+<style>
+  * {
+    font-family: 'Courier New';
+  }
+
+  body {
+    background: beige;
+  }
+
+  #info {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 80%;
+    max-width: 500px;
+    border: 10px solid #008080;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  #info > h1 {
+    font-weight: bold;
+  }
+</style>
+<div id=info>
+  <h1>Dominic Farolino</h1>
+  <p>This property will be put to use later...</p>
+</div>
+<script>
+  let colors = [
+                'antiquewhite',
+                'aquamarine',
+                'beige',
+                'bisque',
+                'burleywood',
+                'cadetblue',
+                'cornsilk',
+                'honeydew',
+                'powderblue',
+                'wheat'
+              ];
+
+  let color = colors[Math.floor(Math.random() * 10)];
+  document.querySelector('body').style.background = color;
+</script>
